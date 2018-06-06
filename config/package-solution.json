@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "dnd-chargen-v-1-client-side-solution",
+    "id": "31407eed-381c-4ce6-bd96-dd1c45bcba34",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true
+  },
+  "paths": {
+    "zippedPackage": "solution/dnd-chargen-v-1.sppkg"
+  }
+}

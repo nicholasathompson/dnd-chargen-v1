@@ -1,0 +1,12 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": true,
+    "isCreatingSolution": true,
+    "environment": "spo",
+    "version": "1.5.0",
+    "libraryName": "dnd-chargen-v-1",
+    "libraryId": "31407eed-381c-4ce6-bd96-dd1c45bcba34",
+    "packageManager": "npm",
+    "componentType": "webpart"
+  }
+}

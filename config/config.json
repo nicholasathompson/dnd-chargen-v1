@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "character-generator-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/characterGenerator/CharacterGeneratorWebPart.js",
+          "manifest": "./src/webparts/characterGenerator/CharacterGeneratorWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "CharacterGeneratorWebPartStrings": "lib/webparts/characterGenerator/loc/{locale}.js"
+  }
+}
