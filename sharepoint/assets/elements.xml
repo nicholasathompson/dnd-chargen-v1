@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+
+<!--Fields for list: Character-->
+<Field ID="{060E50AC-E9C1-4D3C-B1F9-DE0BCAC300F6}"
+        Name="CharacterName"
+        DisplayName="Character Name"
+        Type="Text"
+        MaxLength=255
+        Required="FALSE"
+        Group="Character Generator Columns" />
+
+<Field ID="{FD6C86E6-110C-40B7-8EDB-93C3362E62B3}"
+        Name="XP"
+        DisplayName="Experience Points"
+        Type="Number"
+        Min=0
+        Decimals=0
+        Required="FALSE"
+        Group="Character Generator Columns" />           
+
+<Field ID="{10659F62-4540-4E25-BFF3-0A6C01DD9C3B}"
+        Name="Age"
+        DisplayName="Age"
+        Type="Text"
+        MaxLength=255
+        Required="FALSE"
+        Group="Character Generator Columns" />
+
+<Field ID="{F8A7911F-E689-449E-95C0-804C7741057D}"
+        Name="Sex"
+        DisplayName="Sex"
+        Type="Text"
+        MaxLength=255
+        Required="FALSE"
+        Group="Character Generator Columns" />
+
+<Field ID="{0B0FDEE6-D6EE-48FA-9D0B-D0BC8068BB94}"
+        Name="Height"
+        DisplayName="Height"
+        Type="Text"
+        MaxLength=255
+        Required="FALSE"
+        Group="Character Generator Columns" />
+
+<Field ID="{A5DFDF58-85BA-4D24-8870-C30FEE17532C}"
+        Name="Weight"
+        DisplayName="Weight"
+        Type="Text"
+        MaxLength=255
+        Required="FALSE"
+        Group="Character Generator Columns" />
+
+<Field ID="{FDBEE73C-09A3-432D-B367-66A877C246B5}"
+        Name="HairColor"
+        DisplayName="Hair Color"
+        Type="Text"
+        MaxLength=255
+        Required="FALSE"
+        Group="Character Generator Columns" />
+
+<Field ID="{C693DBD5-DB64-494B-BF81-8D42BC91E59B}"
+        Name="Traits"
+        DisplayName="Traits"
+        Type="Note"
+        NumLines=3
+        Required="FALSE"
+        Group="Character Generator Columns" />                                 
+
+<Field ID="{1FA9596C-E9D1-4DE8-B8B9-8D0AF1B97BAA}"
+           Name="Ideals"
+           DisplayName="Ideals"
+           Type="Note"
+           NumLines=3
+           Required="FALSE"
+           Group="Character Generator Columns" />
+
+<Field ID="{D9632E3E-F140-4BE8-A36F-D9E963E0BB86}"
+           Name="Flaws"
+           DisplayName="Flaws"
+           Type="Note"
+           NumLines=3
+           Required="FALSE"
+           Group="Character Generator Columns" />
+
+<Field ID="{65918568-CBAC-4736-A838-7CBA69C15B5A}"
+           Name="Bonds"
+           DisplayName="Bonds"
+           Type="Note"
+           NumLines=3
+           Required="FALSE"
+           Group="Character Generator Columns" /> 
+
+<Field ID="{0368BDC8-FE14-4BEC-B564-00228FBFA51C}"
+        Name="FactionName"
+        DisplayName="Faction Name"
+        Type="Text"
+        MaxLength=255
+        Required="FALSE"
+        Group="Character Generator Columns" />           
+
+<Field ID="{05E38AE6-7540-458E-A554-F4D04C710EC1}"
+        Name="DescriptionBackstory"
+        DisplayName="Description and Backstory"
+        Type="Note"
+        NumLines=10
+        Required="FALSE"
+        Group="Character Generator Columns" />
+        
+<Field ID="{943E7530-5E2B-4C02-8259-CCD93A9ECB18}"
+        Name="Player"
+        DisplayName="Player"
+        Type="User"
+        Required="TRUE"
+        Group="Character Generator Columns" />
+<Field ID="{DE9E74D2-63AA-438A-A807-DEEB2A26394C}"
+        Name="Race"
+        DisplayName="Race"
+        Type="Lookup"
+        List="Lists/Races"
+        ShowField="RaceName"
+        Required="FALSE"
+        Group="Character Generator Columns" />
+
+<!--Fields for list: Race-->
+<Field ID="{4B389D7A-E14D-4EC6-A3BA-736316814B9F}"
+        Name="RaceName"
+        DisplayName="Race Name"
+        Type="Text"
+        MaxLength=255
+        Required="FALSE"
+        Group="Character Generator Columns" />
+
+<!--Fields for list: RaceVariant-->
+<Field ID="{C3919B30-928D-4D44-AFE5-7867C4884FCF}"
+        Name="VariantName"
+        DisplayName="Variant Name"
+        Type="Text"
+        MaxLength=255
+        Required="FALSE"
+        Group="Character Generator Columns" />
+
+
+<Field ID="{2B2ED6F8-4980-48DA-8D8C-CB227E7317FC}"
+        Name="Race"
+        DisplayName="Race"
+        Type="Lookup"
+        MaxLength=255
+        Required="FALSE"
+        Group="Character Generator Columns" />
+
+
+<!--Fields for list: Class-->
+<Field ID="{4B389D7A-E14D-4EC6-A3BA-736316814B9F}"
+        Name="ClassName"
+        DisplayName="Class Name"
+        Type="Text"
+        MaxLength=255
+        Required="FALSE"
+        Group="Character Generator Columns" />
+
+<!--Fields for list: ClassArchetype-->
+<Field ID="{8FECF6F5-70AE-4A26-8000-6FB72DFAF37C}"
+        Name="ArchetypeName"
+        DisplayName="Archetype Name"
+        Type="Text"
+        MaxLength=255
+        Required="FALSE"
+        Group="Character Generator Columns" />
+
+<Field ID="{79B20682-0B1E-4655-A249-74B889CE6CF4}"
+        Name="Class"
+        DisplayName="Class"
+        Type="Lookup"
+        MaxLength=255
+        Required="FALSE"
+        Group="Character Generator Columns" />
+
+<!--Content Types-->                 
+<ContentType ID="0x010042D0C1C200A14B6887742B6344675C8B" 
+        Name="Character" 
+        Group="Character Generator Content Types" 
+        Description="Content Types">
+<FieldRefs>
+        <FieldRef ID="{060E50AC-E9C1-4D3C-B1F9-DE0BCAC300F6}" /> 
+        <FieldRef ID="{943E7530-5E2B-4C02-8259-CCD93A9ECB18}" />
+        <FieldRef ID="{FD6C86E6-110C-40B7-8EDB-93C3362E62B3}" />
+        <FieldRef ID="{10659F62-4540-4E25-BFF3-0A6C01DD9C3B}" />
+        <FieldRef ID="{F8A7911F-E689-449E-95C0-804C7741057D}" />
+        <FieldRef ID="{0B0FDEE6-D6EE-48FA-9D0B-D0BC8068BB94}" />
+        <FieldRef ID="{A5DFDF58-85BA-4D24-8870-C30FEE17532C}" />
+        <FieldRef ID="{FDBEE73C-09A3-432D-B367-66A877C246B5}" />
+        <FieldRef ID="{C693DBD5-DB64-494B-BF81-8D42BC91E59B}" />
+        <FieldRef ID="{1FA9596C-E9D1-4DE8-B8B9-8D0AF1B97BAA}" />
+        <FieldRef ID="{D9632E3E-F140-4BE8-A36F-D9E963E0BB86}" />
+        <FieldRef ID="{65918568-CBAC-4736-A838-7CBA69C15B5A}" />
+        <FieldRef ID="{0368BDC8-FE14-4BEC-B564-00228FBFA51C}" />
+        <FieldRef ID="{05E38AE6-7540-458E-A554-F4D04C710EC1}" />
+        <FieldRef ID="{DE9E74D2-63AA-438A-A807-DEEB2A26394C}" />
+</FieldRefs>
+</ContentType>
+
+<ContentType ID="0x0100A89565565A7343609F8B57E792268A1A" 
+        Name="Race" 
+        Group="Character Generator Content Types" 
+        Description="Content Types">
+<FieldRefs>
+        <FieldRef ID="{4B389D7A-E14D-4EC6-A3BA-736316814B9F}" /> 
+</FieldRefs>
+</ContentType>
+
+<ContentType ID="0x0100569C5AC0D3DF4F94A6363C0751D1E333" 
+        Name="RaceVariant" 
+        Group="Character Generator Content Types" 
+        Description="Content Types">
+<FieldRefs>
+        <FieldRef ID="{C3919B30-928D-4D44-AFE5-7867C4884FCF}" />
+        <FieldRef ID="{2B2ED6F8-4980-48DA-8D8C-CB227E7317FC}" />  
+</FieldRefs>
+</ContentType> 
+
+<ContentType ID="0x01006EB5F272E8864D95AF59731214014232" 
+        Name="Class" 
+        Group="Character Generator Content Types" 
+        Description="Content Types">
+<FieldRefs>
+        <FieldRef ID="{4B389D7A-E14D-4EC6-A3BA-736316814B9F}" /> 
+</FieldRefs>
+</ContentType> 
+
+<ContentType ID="0x010041D4BF87D75049A69368A31240E2E720" 
+        Name="ClassArchetype" 
+        Group="Character Generator Content Types" 
+        Description="Content Types">
+<FieldRefs>
+        <FieldRef ID="{8FECF6F5-70AE-4A26-8000-6FB72DFAF37C}" />
+        <FieldRef ID="{79B20682-0B1E-4655-A249-74B889CE6CF4}" /> 
+</FieldRefs>
+</ContentType> 
+
+<ListInstance 
+        CustomSchema="schema.xml"
+        FeatureId="00bfea71-de22-43b2-a848-c05709900100"
+        Title="Characters" 
+        Description="Character List"
+        TemplateType="100"
+        Url="Lists/Characters">
+</ListInstance>
+
+<ListInstance 
+        CustomSchema="schema.xml"
+        FeatureId="00bfea71-de22-43b2-a848-c05709900100"
+        Title="Races" 
+        Description="Race List"
+        TemplateType="100"
+        Url="Lists/Races">
+</ListInstance>
+
+<ListInstance 
+        CustomSchema="schema.xml"
+        FeatureId="00bfea71-de22-43b2-a848-c05709900100"
+        Title="RaceVariants" 
+        Description="Race Variant List"
+        TemplateType="100"
+        Url="Lists/RaceVariants">
+</ListInstance>
+
+<ListInstance 
+        CustomSchema="schema.xml"
+        FeatureId="00bfea71-de22-43b2-a848-c05709900100"
+        Title="Classes" 
+        Description="Class List"
+        TemplateType="100"
+        Url="Lists/Classes">
+</ListInstance>
+
+<ListInstance 
+        CustomSchema="schema.xml"
+        FeatureId="00bfea71-de22-43b2-a848-c05709900100"
+        Title="ClassArchetypes" 
+        Description="Class Archetype List"
+        TemplateType="100"
+        Url="Lists/ClassArchetypes">
+</ListInstance>
+
+</Elements>
