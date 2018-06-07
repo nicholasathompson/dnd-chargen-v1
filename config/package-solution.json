@@ -4,7 +4,27 @@
     "name": "dnd-chargen-v-1-client-side-solution",
     "id": "31407eed-381c-4ce6-bd96-dd1c45bcba34",
     "version": "1.0.0.0",
-    "includeClientSideAssets": true
+    "includeClientSideAssets": true,
+    "features": [
+      {
+        "title": "dnd-chargen-v1",
+        "description": "dnd character generator",
+        "id": "7fd18647-b687-4537-a687-71541b17bbd9",
+        "version": "1.0.0.0",
+        "assets": {
+          "elementManifests": [
+            "elements.xml"
+          ],
+          "elementFiles": [
+            "schema-characters.xml",
+            "schema-classarchetypes.xml",
+            "schema-classes.xml",
+            "schema-races.xml",
+            "schema-racevariants.xml"
+          ]
+        }
+      }
+    ]
   },
   "paths": {
     "zippedPackage": "solution/dnd-chargen-v-1.sppkg"
