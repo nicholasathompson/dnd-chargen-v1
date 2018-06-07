@@ -16,11 +16,11 @@
             "elements.xml"
           ],
           "elementFiles": [
-            "schema-characters.xml",
-            "schema-classarchetypes.xml",
             "schema-classes.xml",
+            "schema-classarchetypes.xml",
             "schema-races.xml",
-            "schema-racevariants.xml"
+            "schema-racevariants.xml",
+            "schema-characters.xml"
           ]
         }
       }
