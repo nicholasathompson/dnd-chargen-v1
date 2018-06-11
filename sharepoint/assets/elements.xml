@@ -64,7 +64,7 @@
         Url="Lists/RaceVariants">
 </ListInstance>
 <!--Fields for list: Classes-->
-<Field ID="{4B389D7A-E14D-4EC6-A3BA-736316814B9F}"
+<Field ID="{5ADCA8B8-6264-47A1-8B66-F545670EF678}"
         Name="ClassName"
         DisplayName="Class Name"
         Type="Text"
@@ -77,7 +77,7 @@
         Group="Character Generator Content Types" 
         Description="Content Types">
 <FieldRefs>
-        <FieldRef ID="{4B389D7A-E14D-4EC6-A3BA-736316814B9F}" /> 
+        <FieldRef ID="{5ADCA8B8-6264-47A1-8B66-F545670EF678}" /> 
 </FieldRefs>
 </ContentType> 
 <!--Classes-->
@@ -325,7 +325,7 @@
         Group="Character Generator Columns" />     
 
 <!--Content Type: Characters-->                 
-<ContentType ID="0x010042D0C1C200A14B6887742B6344675C8B" 
+<ContentType ID="0x0100B4771B4115ED41E5BDD2481DF1BA83BD" 
         Name="Character" 
         Group="Character Generator Content Types" 
         Description="Content Types">
